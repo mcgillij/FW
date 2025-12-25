@@ -1,0 +1,3 @@
+extends FW_InventoryItem
+
+class_name FW_EquipmentInventoryItem
