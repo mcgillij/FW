@@ -1,4 +1,0 @@
-extends TextureRect
-
-signal save_scroll_value
-signal controller_scroll

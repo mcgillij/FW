@@ -1,0 +1,25 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="FW"
+run/main_scene="res://tests/TestBootstrap.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Config="*res://addons/fw/Config/FW_ConfigService.gd"
+FrameworkBus="*res://addons/fw/Signals/FW_FrameworkBus.gd"
+Net="*res://addons/fw/Net/FW_NetService.gd"
+Audio="*res://addons/fw/Audio/FW_AudioService.gd"
+SaveService="*res://addons/fw/Save/FW_SaveService.gd"
+SceneRouter="*res://addons/fw/Scenes/FW_SceneRouter.gd"
